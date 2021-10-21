@@ -1,0 +1,2 @@
+# note
+messing with django

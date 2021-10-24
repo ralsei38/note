@@ -6,6 +6,7 @@ note_project/note_app/__pycache__/models.cpython-39.pyc
 note_project/note_app/__pycache__/urls.cpython-39.pyc
 note_project/note_app/__pycache__/views.cpython-39.pyc
 note_project/note_project/__pycache__/settings.cpython-39.pyc
+*.pyc
 *.log
 local_settings.py
 db.sqlite3

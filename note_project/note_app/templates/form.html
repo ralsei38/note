@@ -8,7 +8,7 @@
     <title>insert</title>
 </head>
 <body>
-    <form action="#">
+    <form action="{% url 'form' %}">
         {% csrf_token %}
         <div class="main_container">
             <div class="title_container">
@@ -18,9 +18,9 @@
     
             <div class="desc_container">
             <label for="title">description</label>
-            <textarea name="desc" id="" cols="30" rows="4" spellcheck="false">
-
+            <textarea name="desc" id="" cols="30" rows="2" spellcheck="false">
             </textarea>
+
             </div>
             <button>Submit</button>
         </div>

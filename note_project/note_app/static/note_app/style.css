@@ -11,7 +11,10 @@ body > h1
     margin-bottom: 10%;
 }
 
-
+body
+{
+    font-size: 1.5em;
+}
 section
 {
     display: flex;
@@ -78,10 +81,10 @@ article input[type=submit]
     background-color: white;
     font-weight: bold;
 
-    border-bottom: 1px solid #a792cc;
-    border-radius: 15px 0px 15px 0px;
-    border-left: 2px solid #72648b;
-    border-bottom: 2px solid #72648b;
+    /* border-bottom: 1px solid #a792cc; */
+    border-radius: 200px 0px 200px 0px;
+    /* border-left: 2px solid #72648b; */
+    /* border-bottom: 2px solid #72648b; */
 }
 
 .done:hover

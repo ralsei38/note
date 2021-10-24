@@ -1,2 +1,1 @@
-# note
-messing with django
+Django To Do application

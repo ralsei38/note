@@ -14,7 +14,22 @@
 <body>
     <h1>first view using templates !</h1>
     <section>
-        <article>
+
+        {% for  note in  notes%}
+            <article>
+                <h1> {{ note.title }} </h1>
+                <p>{{ note.desc }}</p>
+                <form action="{% url 'set_as_done' %}">
+                    <label for="done">
+                        <input type="submit" name="done">
+                        <div class="done">Done</div>
+                    </label>
+                </form>
+            </article>
+        {% endfor %}
+
+
+        {% comment %} <article>
             <h1>Cours de devOps</h1>
             <p>Terminer les derniers TPs de vendredi.</p>
             <form action="#">
@@ -34,7 +49,7 @@
                     <div class="done">Done</div>
                 </label>
             </form>
-        </article>
+        </article> {% endcomment %}
     </section>
     
 </body>

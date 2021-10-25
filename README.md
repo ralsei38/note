@@ -9,3 +9,4 @@ This Django project aims at familiarizing myself with the framework.
 <img src="note_project/img/home.png">
 
 <hr>
+will eventually grow at some point

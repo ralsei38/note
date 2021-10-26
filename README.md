@@ -1,5 +1,5 @@
 # note
-building a To Do app for some reasons
+Building a Django project to familiarize myself with the framework itself and with Github.
 ## form page
 <hr/>
 <img src="note_project/img/form.png">
@@ -9,3 +9,4 @@ building a To Do app for some reasons
 <img src="note_project/img/home.png">
 
 <hr>
+will eventually grow at some point

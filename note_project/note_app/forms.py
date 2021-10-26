@@ -6,7 +6,7 @@ class NoteForm(ModelForm):
         model = Note
         fields = ['title', 'desc', 'is_done']
 
-class DoneFOrm(ModelForm):
+class DoneForm(ModelForm):
     class Meta:
         model = Note
         fields = ['title', 'desc', 'is_done']

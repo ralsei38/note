@@ -1,5 +1,5 @@
 # note
-This Django project aims at familiarizing myself with the framework itself and with Github.
+Building a Django project to familiarize myself with the framework itself and with Github.
 ## form page
 <hr/>
 <img src="note_project/img/form.png">

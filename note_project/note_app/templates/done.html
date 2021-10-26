@@ -1,0 +1,34 @@
+{% load static %}
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="{% static 'note_app/done.css' %}">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+         <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
+    <title>home</title>
+</head>
+<body>
+    <h1>Notes</h1>
+    <section>
+
+        {% for  note in  notes%}
+            <article>
+                <h1>{{ note.title }}</h1>
+                <p>{{ note.desc }}</p>
+                <form action="{% url 'delete' note.id %}">
+                    <label for="delete">
+                        <input type="submit" name="delete">
+                        <button class="delete">Delete</button>
+                    </label>
+                </form>
+            </article>
+        {% endfor %}
+    </section>
+    
+</body>
+</html>

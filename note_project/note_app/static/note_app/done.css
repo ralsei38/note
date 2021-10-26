@@ -1,0 +1,95 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+body > h1
+{
+    text-align: center;
+    font-family: 'Roboto';
+    font-family: 'Cormorant Garamond', serif;
+    margin-bottom: 10%;
+    color: #746394;
+}
+
+body
+{
+    font-size: 1.5em;
+}
+section
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+article
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 25%;
+    margin-top: 2%;
+    
+    font-family: 'Roboto', sans-serif;
+    background-color: #a792cc;
+    color: white;
+    
+
+    box-shadow: 4px 2px 10px grey;
+}
+
+article h1, article p, article form
+{
+    /* border: 1px solid black; */
+    width: 90%;
+    margin-top: 2%;
+}
+
+form
+{
+    display: flex;
+    justify-content: center;
+}
+
+label
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: 10%;
+    width: 25%;
+}
+/* hiding the default checkbox style (berk) */
+article input[type=submit]
+{
+    display: none;
+}
+
+.delete
+{
+    width: 100%;
+    padding: 3%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: #a792cc;
+    background-color: white;
+    font-weight: bold;
+
+    /* border-bottom: 1px solid #a792cc; */
+    border-radius: 200px 0px 200px 0px;
+    /* border-left: 2px solid #72648b; */
+    /* border-bottom: 2px solid #72648b; */
+}
+
+.delete:hover
+{
+    cursor:pointer;
+}

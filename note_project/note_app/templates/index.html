@@ -18,12 +18,12 @@
 
         {% for  note in  notes%}
             <article>
-                <h1> {{ note.title }} </h1>
+                <h1>{{ note.title }}</h1>
                 <p>{{ note.desc }}</p>
-                <form action="{% url 'set_as_done' %}">
+                <form action="{% url 'set_as_done' note.id %}">
                     <label for="done">
                         <input type="submit" name="done">
-                        <div class="done">Done</div>
+                        <button class="done">Done</button>
                     </label>
                 </form>
             </article>

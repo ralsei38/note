@@ -57,3 +57,7 @@ def set_as_done(request, id):
     else:
         Http404()
     return redirect('index')
+
+def categories(request):
+    context = {}
+    return render(request, 'categories.html', context)

@@ -1,0 +1,58 @@
+{% load static %}
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="{% static 'note_app/nav.css' %}"/>
+        <link rel="stylesheet" type="text/css" href="{% static 'note_app/style.css' %}">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
+    <title>home</title>
+</head>
+<body>
+    {% include "header.html" %}
+    <section>
+
+        {% for  category in  categories %}
+            <article>
+                <h1>{{ category.title }}</h1>
+                <p>{{ category.desc }}</p>
+                <form action="{% url 'index' category.id %}">
+                    <label for="done">
+                        <input type="submit" name="done">
+                        <button class="done">See</button>
+                    </label>
+                </form>
+            </article>
+        {% endfor %}
+
+
+        {% comment %} <article>
+            <h1>Cours de devOps</h1>
+            <p>Terminer les derniers TPs de vendredi.</p>
+            <form action="#">
+                <label for="">
+                    <input type="submit" name="#" id="#">
+                    <div class="done">Done</div>
+                </label>
+            </form>
+        </article>
+
+        <article>
+            <h1>Cours de math</h1>
+            <p>Demander de l'aide je suis nulos.</p>
+            <form action="#">
+                <label for="">
+                    <input type="submit" name="#" id="#">
+                    <div class="done">Done</div>
+                </label>
+            </form>
+        </article> {% endcomment %}
+    </section>
+    
+</body>
+</html>
